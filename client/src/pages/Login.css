@@ -1,0 +1,370 @@
+/* Login Container - Split Layout */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* LEFT SIDE - Branding */
+.login-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.95) 0%, rgba(118, 75, 162, 0.95) 100%);
+}
+
+.login-branding {
+  max-width: 600px;
+  color: white;
+}
+
+.login-branding-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  background: linear-gradient(135deg, #ffffff 0%, #e0e7ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.login-branding-description {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  opacity: 0.95;
+}
+
+.login-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.login-feature {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.login-feature:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.login-feature-icon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.login-feature h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.login-feature p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+/* RIGHT SIDE - Login Form */
+.login-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  background: white;
+}
+
+/* Login Card */
+.login-card {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 3rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Login Title */
+.login-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.login-subtitle {
+  font-size: 1rem;
+  color: #6b7280;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Message Styles */
+.login-message {
+  padding: 1rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.login-error {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+.login-success {
+  background: #d1fae5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+/* Login Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #374151;
+  font-size: 0.95rem;
+}
+
+.form-group input {
+  padding: 0.875rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-group input:disabled {
+  background: #f3f4f6;
+  cursor: not-allowed;
+}
+
+/* Role Selection */
+.role-selection {
+  margin-top: 1rem;
+}
+
+.role-label {
+  font-weight: 600;
+  color: #374151;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.role-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.role-card {
+  background: #f9fafb;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.role-card:hover {
+  border-color: #667eea;
+  background: #f0f4ff;
+  transform: translateY(-2px);
+}
+
+.role-card-selected {
+  border-color: #667eea;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.role-icon {
+  font-size: 1.75rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.role-card h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.role-card p {
+  font-size: 0.75rem;
+  opacity: 0.9;
+  line-height: 1.3;
+}
+
+.role-card-selected p {
+  opacity: 0.95;
+}
+
+/* Login Button */
+.login-button {
+  padding: 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: 1rem;
+}
+
+.login-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.login-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.login-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Login Footer */
+.login-footer {
+  margin-top: 2rem;
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.login-footer-text {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.login-footer-link {
+  background: none;
+  border: none;
+  color: #667eea;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.3s;
+}
+
+.login-footer-link:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .login-left {
+    padding: 3rem 2rem;
+  }
+
+  .login-branding-title {
+    font-size: 2.5rem;
+  }
+
+  .login-features {
+    grid-template-columns: 1fr;
+  }
+
+  .login-right {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-left {
+    padding: 2rem 1.5rem;
+  }
+
+  .login-branding-title {
+    font-size: 2rem;
+  }
+
+  .login-branding-description {
+    font-size: 1rem;
+  }
+
+  .login-features {
+    gap: 1rem;
+  }
+
+  .login-feature {
+    padding: 1rem;
+  }
+
+  .login-right {
+    padding: 2rem 1.5rem;
+  }
+
+  .login-card {
+    padding: 2rem;
+  }
+
+  .login-title {
+    font-size: 2rem;
+  }
+
+  .role-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-branding-title {
+    font-size: 1.75rem;
+  }
+
+  .login-card {
+    padding: 1.5rem;
+  }
+
+  .login-title {
+    font-size: 1.5rem;
+  }
+}
