@@ -58,7 +58,7 @@ function Signup({ onSignupSuccess, onNavigateToLogin }) {
 
     try {
       const response = await fetch(
-        'http://localhost:5000/api/auth/register',
+        'https://event-management-system-fmy4.onrender.com/api/auth/register',
         {
           method: 'POST',
           headers: {
