@@ -13,7 +13,10 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: ['http://localhost:5173', 'http://localhost:3000', 'https://event-management-system-fmy4.onrender.com'],
+  credentials: true
+}));
 app.use(express.json());
 
 // Routes
