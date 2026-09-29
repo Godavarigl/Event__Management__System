@@ -25,7 +25,7 @@ function Events() {
     const fetchEvents = async () => {
       try {
         const response = await fetch(
-          'https://event-management-system-fmy4.onrender.com/api/events'
+          'https://event-management-system-fmvu.onrender.com/api/events'
         )
 
         const data = await response.json()
@@ -129,7 +129,7 @@ function Events() {
 
     try {
       const response = await fetch(
-        'https://event-management-system-fmy4.onrender.com/api/registrations',
+        'https://event-management-system-fmvu.onrender.com/api/registrations',
         {
           method: 'POST',
           headers: {

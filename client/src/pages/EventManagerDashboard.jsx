@@ -65,7 +65,7 @@ function EventManagerDashboard() {
       }
       
       try {
-        const response = await fetch('https://event-management-system-fmy4.onrender.com/api/events', {
+        const response = await fetch('https://event-management-system-fmvu.onrender.com/api/events', {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -132,7 +132,7 @@ function EventManagerDashboard() {
     setSubmitting(true)
     
     try {
-      const response = await fetch('https://event-management-system-fmy4.onrender.com/api/events', {
+      const response = await fetch('https://event-management-system-fmvu.onrender.com/api/events', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -190,7 +190,7 @@ function EventManagerDashboard() {
     setSubmitting(true)
     
     try {
-      const response = await fetch(`https://event-management-system-fmy4.onrender.com/api/events/${editingEvent._id}`, {
+      const response = await fetch(`https://event-management-system-fmvu.onrender.com/api/events/${editingEvent._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -243,7 +243,7 @@ function EventManagerDashboard() {
     }
     
     try {
-      const response = await fetch(`https://event-management-system-fmy4.onrender.com/api/events/${eventId}`, {
+      const response = await fetch(`https://event-management-system-fmvu.onrender.com/api/events/${eventId}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${token}`
@@ -297,7 +297,7 @@ function EventManagerDashboard() {
     if (!token) return
     
     try {
-      const response = await fetch('https://event-management-system-fmy4.onrender.com/api/events', {
+      const response = await fetch('https://event-management-system-fmvu.onrender.com/api/events', {
         headers: {
           'Authorization': `Bearer ${token}`
         }

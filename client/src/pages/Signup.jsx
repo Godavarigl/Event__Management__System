@@ -58,7 +58,7 @@ function Signup({ onSignupSuccess, onNavigateToLogin }) {
 
     try {
       const response = await fetch(
-        'https://event-management-system-fmy4.onrender.com/api/auth/register',
+        'https://event-management-system-fmvu.onrender.com/api/auth/register',
         {
           method: 'POST',
           headers: {

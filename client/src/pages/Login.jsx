@@ -35,7 +35,7 @@ function Login({ onLoginSuccess, onNavigateToSignup }) {
 
     try {
       const response = await fetch(
-        'https://event-management-system-fmy4.onrender.com/api/auth/login',
+        'https://event-management-system-fmvu.onrender.com/api/auth/login',
         {
           method: 'POST',
           headers: {

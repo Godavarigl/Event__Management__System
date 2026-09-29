@@ -34,7 +34,7 @@ function BusinessDashboard() {
       }
       
       try {
-        const response = await fetch('https://event-management-system-fmy4.onrender.com/api/business/reports', {
+        const response = await fetch('https://event-management-system-fmvu.onrender.com/api/business/reports', {
           headers: {
             'Authorization': `Bearer ${token}`
           }

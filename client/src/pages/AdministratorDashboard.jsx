@@ -40,7 +40,7 @@ function AdministratorDashboard() {
     // Fetch events data for system overview
     const fetchSystemData = async () => {
       try {
-        const response = await fetch('https://event-management-system-fmy4.onrender.com/api/events', {
+        const response = await fetch('https://event-management-system-fmvu.onrender.com/api/events', {
           headers: {
             'Authorization': `Bearer ${token}`
           }

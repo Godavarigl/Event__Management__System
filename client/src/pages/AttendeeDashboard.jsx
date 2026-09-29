@@ -48,7 +48,7 @@ function AttendeeDashboard({ onNavigateToEvents }) {
 
       try {
         const response = await fetch(
-          'https://event-management-system-fmy4.onrender.com/api/registrations/my',
+          'https://event-management-system-fmvu.onrender.com/api/registrations/my',
           {
             headers: {
               'Authorization': `Bearer ${token}`
@@ -114,7 +114,7 @@ function AttendeeDashboard({ onNavigateToEvents }) {
 
     try {
       const response = await fetch(
-        `https://event-management-system-fmy4.onrender.com/api/registrations/${registrationId}/cancel`,
+        `https://event-management-system-fmvu.onrender.com/api/registrations/${registrationId}/cancel`,
         {
           method: 'PATCH',
           headers: {
